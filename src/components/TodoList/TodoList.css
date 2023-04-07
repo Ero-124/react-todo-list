@@ -1,0 +1,42 @@
+.todo {
+  margin-bottom: 16px;
+}
+
+.todo.completed span {
+  text-decoration: line-through;
+}
+
+.todo label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 16px;
+  background-color: #f3f3f3;
+}
+[type="checkbox"] + span:not(.lever):before,
+[type="checkbox"]:not(.filled-in) + span:not(.lever):after {
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0;
+}
+[type="checkbox"] + span:not(.lever) {
+  height: auto;
+}
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  width: 18px;
+  height: 18px;
+}
+
+.todo i {
+  z-index: 2;
+}
+.article-gif {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: flex;
+  margin: 0 auto;
+}
