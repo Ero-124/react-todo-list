@@ -1,7 +1,10 @@
 .todo {
   margin-bottom: 16px;
+  background-color: var(--background-color-secondary) !important;
 }
-
+.todo.completed {
+  background-color: var(--background-color-three) !important;
+}
 .todo.completed span {
   text-decoration: line-through;
 }
@@ -13,7 +16,7 @@
   justify-content: space-between;
   cursor: pointer;
   padding: 16px;
-  background-color: #f3f3f3;
+  color: var(--input-color);
 }
 [type="checkbox"] + span:not(.lever):before,
 [type="checkbox"]:not(.filled-in) + span:not(.lever):after {
@@ -39,4 +42,8 @@
   object-fit: cover;
   display: flex;
   margin: 0 auto;
+}
+
+p {
+  color: var(--color-default);
 }

@@ -43,7 +43,7 @@ const TodoForm: React.FC<TodoFormProps> = (props) => {
         // ref={ref}
         type="text"
         id="title"
-        placeholder="Введите название дело"
+        placeholder="Введите название дело..."
         onKeyDown={keyPressHandler}
       />
       <button className="btn" onClick={addNewTodo} disabled={title.trim().length < 1}>

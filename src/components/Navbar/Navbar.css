@@ -1,0 +1,14 @@
+nav {
+  background-color: var(--background-color-secondary);
+}
+
+.brand-logo {
+  color: #fff;
+}
+
+
+@media (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: block !important;
+  }
+}

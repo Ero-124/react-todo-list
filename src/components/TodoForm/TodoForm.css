@@ -1,13 +1,33 @@
-.btn {
+.input-field input {
+  background-color: var(--background-color-input) !important;
+  margin: 10px 0 !important;
+  color: var(--color-default) !important;
+  padding: 0 5px !important;
+  border-bottom: var(--border-bottom) !important;
+  box-shadow: none !important;
+}
+.input-field input::placeholder {
+  color: var(--button-disabled) !important;
+}
+.input-field input:focus {
+  border-bottom: var(--border-bottom-focus) !important;
+}
+.input-field .btn {
   margin-right: 15px;
+  background-color: var(--button-background-color) !important;
+  color: var(--button-color) !important;
+}
+.input-field .btn:disabled {
+  background-color: var(--button-disabled) !important;
+  color: var(--button-disabled-color) !important;
 }
 
-.btn:last-child {
+.input-field .btn:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 620px) {
-  .btn {
+  .input-field .btn {
     margin-right: 5px;
     padding: 0 7px;
     font-size: 8px;

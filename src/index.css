@@ -5,11 +5,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  transition: background-color 200ms linear;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+html[data-theme="light"] {
+  --background-default: #fff;
+  --background-color-secondary: #2bbbad;
+  --background-color-three: #2b5550;
+  --color-default: #000;
+
+  --input-color: #000;
+  
+  --theme-color: #fff;
+
+  --border-bottom: 1px solid #888;
+  --border-bottom-focus: 1px solid #2bbbad;
+
+  --button-disabled: #aaaaaa;
+  --button-disabled-color: #fff;
+  --button-background-color: #2bbbad;
+  --button-color: #fff;
+}
+
+html[data-theme="dark"] {
+  --background-default: #121212;
+  --background-color-secondary: #1f1f1f;
+  --background-color-three: #ffffff2f;
+  --color-default: #fff;
+
+  --input-color: #888;
+
+  --border-bottom: 1px solid #888;
+  --border-bottom-focus: 1px solid #fff;
+
+  --button-disabled: #3c3c3c;
+  --button-disabled-color: #ffffff84;
+  --button-background-color: #fff;
+  --button-color: #000;
+}
+
+body {
+  background-color: var(--background-default);
 }
 
 .px1 {
@@ -23,5 +60,3 @@ code {
 .ml1 {
   margin-left: 16px;
 }
-
-
