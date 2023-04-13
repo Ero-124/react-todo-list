@@ -1,9 +1,9 @@
-import './Navbar.css';
+import "./Navbar.css";
 
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-import { useTheme } from '../../hooks/use-theme';
+import { useTheme } from "../../hooks/use-theme";
 
 const Navbar: React.FC = () => {
   const { setTheme } = useTheme();
@@ -16,20 +16,22 @@ const Navbar: React.FC = () => {
         </NavLink>
         <ul className="right hide-on-med-and-down">
           <li>
-            <button
-                          className="btn text-white"
-                          onClick={() => setTheme('light')}
-            >
-              Light
-            </button>
+            <NavLink to="/">Todo List</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About us</NavLink>
           </li>
           <li>
             <button
-              className="btn ml1 black  "
+              className=" text-white btn-floating button-theme"
+              onClick={() => setTheme("light")}
+            ></button>
+          </li>
+          <li>
+            <button
+              className="btn-floating ml1 black button-theme"
               onClick={() => setTheme("dark")}
-            >
-              Dark
-            </button>
+            ></button>
           </li>
         </ul>
       </div>

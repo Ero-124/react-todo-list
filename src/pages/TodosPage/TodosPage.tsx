@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 
-import TodoForm from '../components/TodoForm/TodoForm';
-import TodoList from '../components/TodoList/TodoList';
-import { ITodo } from '../interfaces';
+import TodoForm from '../../components/TodoForm/TodoForm';
+import TodoList from '../../components/TodoList/TodoList';
+import { ITodo } from '../../interfaces';
 
 const TodosPage: React.FC = () => {
   const savedTodos = JSON.parse(localStorage.getItem("todos") || "[]");

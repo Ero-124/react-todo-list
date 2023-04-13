@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
-import AboutPage from "./pages/AboutPage";
-import TodosPage from "./pages/TodosPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import TodosPage from "./pages/TodosPage/TodosPage";
 
 const App: React.FC = () => {
   const REPO_NAME: string = "/react-todo-list";

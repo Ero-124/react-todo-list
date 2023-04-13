@@ -16,7 +16,7 @@ const TodoList: React.FC<TodoListProps> = ({ todos, onToggle, onRemove }) => {
     return (
       <>
         <img src={articleGIF} alt="" className="article-gif" />
-        <p className="center">Пока дел нет!</p>
+        <p className="center">While there are no cases!</p>
       </>
     );
   }

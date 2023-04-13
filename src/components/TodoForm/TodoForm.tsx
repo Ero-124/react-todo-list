@@ -1,6 +1,6 @@
-import './TodoForm.css';
+import "./TodoForm.css";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 interface TodoFormProps {
   onAdd(title: string): void;
@@ -43,11 +43,15 @@ const TodoForm: React.FC<TodoFormProps> = (props) => {
         // ref={ref}
         type="text"
         id="title"
-        placeholder="Введите название дело..."
+        placeholder="Enter todo name..."
         onKeyDown={keyPressHandler}
       />
-      <button className="btn" onClick={addNewTodo} disabled={title.trim().length < 1}>
-        Добавить задач
+      <button
+        className="btn"
+        onClick={addNewTodo}
+        disabled={title.trim().length < 1}
+      >
+        Add todo
       </button>
 
       <button
@@ -55,17 +59,17 @@ const TodoForm: React.FC<TodoFormProps> = (props) => {
         onClick={props.handleDeleteAll}
         disabled={props.todosLength < 1}
       >
-        Удалить все
+        Delete all
       </button>
       <button
         className="btn"
         disabled={props.selectedTodosLength < 1}
         onClick={props.handleDeleteSelected}
       >
-        Удалить выбранное
+        Delete selected
       </button>
       <label htmlFor="title" className="active">
-        Введите название дело
+        Enter todo name
       </label>
     </div>
   );
