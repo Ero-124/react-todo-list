@@ -1,9 +1,9 @@
-import './TodoList.css';
+import "./TodoList.css";
 
-import React from 'react';
+import React from "react";
 
-import { ITodo } from '../../interfaces';
-import articleGIF from './img/article-not-found-unscreen.gif';
+import { ITodo } from "../../interfaces";
+import articleGIF from "./img/article-not-found-unscreen.gif";
 
 type TodoListProps = {
   todos: ITodo[];

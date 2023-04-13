@@ -17,8 +17,8 @@ const Navbar: React.FC = () => {
         <ul className="right hide-on-med-and-down">
           <li>
             <button
-              className="btn text-white"
-              onClick={() => setTheme("light")}
+                          className="btn text-white"
+                          onClick={() => setTheme('light')}
             >
               Light
             </button>
