@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/todo-list/static/css/main.6498233d.css",
-    "main.js": "/todo-list/static/js/main.af3373b5.js",
-    "static/js/787.a5cad257.chunk.js": "/todo-list/static/js/787.a5cad257.chunk.js",
-    "static/media/article-not-found-unscreen.gif": "/todo-list/static/media/article-not-found-unscreen.31310a83f6e060337ea1.gif",
-    "index.html": "/todo-list/index.html",
-    "main.6498233d.css.map": "/todo-list/static/css/main.6498233d.css.map",
-    "main.af3373b5.js.map": "/todo-list/static/js/main.af3373b5.js.map",
-    "787.a5cad257.chunk.js.map": "/todo-list/static/js/787.a5cad257.chunk.js.map"
+    "main.css": "/react-todo-list/static/css/main.6498233d.css",
+    "main.js": "/react-todo-list/static/js/main.e2b5f8fb.js",
+    "static/js/787.a5cad257.chunk.js": "/react-todo-list/static/js/787.a5cad257.chunk.js",
+    "static/media/article-not-found-unscreen.gif": "/react-todo-list/static/media/article-not-found-unscreen.31310a83f6e060337ea1.gif",
+    "index.html": "/react-todo-list/index.html",
+    "main.6498233d.css.map": "/react-todo-list/static/css/main.6498233d.css.map",
+    "main.e2b5f8fb.js.map": "/react-todo-list/static/js/main.e2b5f8fb.js.map",
+    "787.a5cad257.chunk.js.map": "/react-todo-list/static/js/787.a5cad257.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6498233d.css",
-    "static/js/main.af3373b5.js"
+    "static/js/main.e2b5f8fb.js"
   ]
 }
